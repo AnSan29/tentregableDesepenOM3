@@ -1,0 +1,67 @@
+{
+  "users": [
+    {
+      "id": "user1",
+      "username": "admin",
+      "password": "U2FsdGVkX1+MHAOf1MDxxXOaUr9zM3dNdGN3FJiD3GM=",
+      "nombre": "Administrador Principal",
+      "rol": "admin",
+      "telefono": "3001234567"
+    },
+    {
+      "id": "user2",
+      "username": "editor",
+      "password": "U2FsdGVkX18JYuBbbX8NV6tL0pxo+qph+wzI4jgN4Xs=",
+      "nombre": "Editor de Contenido",
+      "rol": "editor",
+      "telefono": "3019876543"
+    },
+    {
+      "id": "user3",
+      "username": "viewer",
+      "password": "U2FsdGVkX19dtQX6G+JCAnqftZx6dBRWgIGGEMzYcBE=",
+      "nombre": "Visualizador Invitado",
+      "rol": "viewer",
+      "telefono": "3025554433"
+    },
+    {
+      "id": "d48a",
+      "username": "andres",
+      "password": "U2FsdGVkX19fHC3ofElYHMFVS/hjjWXfQQClTKApUCw=",
+      "nombre": "Andrés Santoyo",
+      "rol": "admin",
+      "telefono": "3244164948"
+    },
+    {
+      "id": "3da6",
+      "username": "santoyo29",
+      "password": "U2FsdGVkX19jF0mJ/+lPUIB7O6pCFP4MZ2ULY9O+LWY=",
+      "nombre": "andres santoyo",
+      "rol": "editor",
+      "telefono": "3222222"
+    }
+  ],
+  "eventos": [
+    {
+      "name": "evento 1",
+      "ubication": "riwi sede barranquilla",
+      "capacity": "100",
+      "date": "2025-04-29",
+      "id": "1"
+    },
+    {
+      "name": "evento 2",
+      "ubication": "riwi sede medellin",
+      "capacity": "39",
+      "date": "2025-07-17",
+      "id": "2"
+    },
+    {
+      "id": "0feb",
+      "name": "antonio",
+      "ubication": "riwi",
+      "capacity": "15000",
+      "date": "2025-07-30"
+    }
+  ]
+}
