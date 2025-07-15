@@ -1,5 +1,5 @@
-export default function verEventos(){
-     /**
+export default function verEventos() {
+  /**
    * - Obtenemos nuestros elementos del dom y los almacenamos en variables
    *   inicializadas en $ para su facil identificacion.
    * - Guardo en una variable d el document.
@@ -33,6 +33,19 @@ export default function verEventos(){
         $template.querySelector(".ubication").textContent = el.ubication;
         $template.querySelector(".capacity").textContent = el.capacity;
         $template.querySelector(".date").textContent = el.date;
+
+        // btn editar
+        $template.querySelector(".edit").dataset.id = el.id;
+        $template.querySelector(".edit").dataset.name = el.name;
+        $template.querySelector(".edit").dataset.ubication = el.ubication;
+        $template.querySelector(".edit").dataset.capacity = el.capacity;
+        $template.querySelector(".edit").dataset.date = el.date;
+        
+        // btn eliminar
+        $template.querySelector(".delete").dataset.id = el.id;
+        $template.querySelector(".delete").dataset.name = el.name;
+        
+
 
         // Clonamos nuestra plantilla
         let $templateCLone = d.importNode($template, true);
@@ -83,7 +96,7 @@ export default function verEventos(){
           let res = await fetch("http://localhost:3000/eventos", options);
           // convierto la respuesta a json
           if (!res.ok) throw { status: res.status, statusText: res.statusText };
-          alert("evento creado!")
+          alert("evento creado!");
           location.reload();
         } catch (err) {
           let message = err.statusText || "Ocurrio un error";
@@ -111,7 +124,7 @@ export default function verEventos(){
             options
           );
           if (!res.ok) throw { status: res.status, statusText: res.statusText };
-          alert("evento actualizado!")
+          alert("evento actualizado!");
           location.reload();
         } catch (err) {
           let message = err.statusText || "Ocurrio un error";
@@ -145,7 +158,7 @@ export default function verEventos(){
         //Delete -- DELETE
         try {
           let options = {
-            method: "DELETE"
+            method: "DELETE",
           };
           // guardo la respuesta de mi fetch en variable res, volviendolo ascincrono
           let res = await fetch(
@@ -153,8 +166,7 @@ export default function verEventos(){
             options
           );
           // convierto la respuesta a json
-          let json = await res.json();
-          alert("Eliminado")
+          alert("Eliminado");
 
           if (!res.ok) throw { status: res.status, statusText: res.statusText };
 

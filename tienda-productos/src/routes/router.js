@@ -19,13 +19,10 @@ import crudEventos from "../views/eventos/crudEvento/crudEventoScript.js";
 import GetEventos from "../views/eventos/verEvento/getEventos.js";
 import verEventos from "../views/eventos/crudEvento/crudEventoScript.js";
 
-
 // definicion de rutas disponibles en la aplicacion
 const routes = {
   "/": { view: Home, guarded: validateGuardedPath("/"), roles: [] },
-  "/crudEventos": {
-    view: CrudEventos,
-    guarded: validateGuardedPath("/crudEventos"),
+  "/crudEventos": {view: CrudEventos, guarded: validateGuardedPath("/crudEventos"),
     script: crudEventos,
     roles: ["admin"],
   },
