@@ -1,5 +1,5 @@
-export default function getEventos(){
- /**
+export default function getEventos() {
+  /**
    * - Obtenemos nuestros elementos del dom y los almacenamos en variables
    *   inicializadas en $ para su facil identificacion.
    * - Guardo en una variable d el document.
@@ -40,14 +40,13 @@ export default function getEventos(){
 
       // incertamos el fragmento del DOM en el real DOM
       $table.querySelector("tbody").appendChild($fragment);
-      d.dispatchEvent(new customEvent("elementsLoaded",{ res: json}))
-      
 
       //  capturo el error con catch
     } catch (err) {
       console.log(err);
       // declaro variable para almacenar mensaje de error con operador de corto circuito
       let message = err.statusText || "Ocurrio un error";
+      console.log("JSON recibido:", json);
       // pinto el error
       $table.insertAdjacentHTML(
         "afterend",

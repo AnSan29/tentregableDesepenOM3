@@ -52,16 +52,9 @@
     {
       "name": "evento 2",
       "ubication": "riwi sede medellin",
-      "capacity": "39",
+      "capacity": "394",
       "date": "2025-07-17",
       "id": "2"
-    },
-    {
-      "id": "0feb",
-      "name": "antonio",
-      "ubication": "riwi",
-      "capacity": "15000",
-      "date": "2025-07-30"
     }
   ]
 }

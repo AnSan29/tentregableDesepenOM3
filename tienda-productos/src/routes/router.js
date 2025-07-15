@@ -2,7 +2,6 @@
 import About from "../views/about.js";
 import NotFound from "../views/notFound.js";
 import CrudEventos from "../views/eventos/crudEvento/crudEventos.js";
-import ApiUi from "../views/apiUi.js";
 import Home from "../views/home.js";
 import Login from "../views/login.js";
 import AccessDenied from "../views/accessDenied.js";
@@ -17,7 +16,7 @@ import setupRegister from "../views/registerScript.js";
 import UserRegister from "../views/userRegister.js";
 import crudEventos from "../views/eventos/crudEvento/crudEventoScript.js";
 import GetEventos from "../views/eventos/verEvento/getEventos.js";
-import verEventos from "../views/eventos/crudEvento/crudEventoScript.js";
+import getEventos from "../views/eventos/verEvento/getEventosScript.js";
 
 // definicion de rutas disponibles en la aplicacion
 const routes = {
@@ -29,7 +28,7 @@ const routes = {
   "/verEventos": {
     view: GetEventos,
     guarded: validateGuardedPath("/verEventos"),
-    script: verEventos,
+    script: getEventos,
     roles: [],
   },
   "/about": { view: About, guarded: validateGuardedPath("/about"), roles: [] },

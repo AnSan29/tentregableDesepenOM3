@@ -98,34 +98,32 @@ export function validateCredentials(user, pass, userApi) {
 }
 
 // funcion para validar credenciales de la creacion
-export function validateCredCreate(username,name,telefono,rol,pass){
-
-
-  if(!username && !name && !telefono && !rol && !pass){
-    alert("Debe ingresar datos en el formulario, esta vacio.")
+export function validateCredCreate(username, name, telefono, rol, pass) {
+  if (!username && !name && !telefono && !rol && !pass) {
+    alert("Debe ingresar datos en el formulario, esta vacio.");
     return false;
   }
 
-  if(!username){
-    alert("el username esta vacio.")
+  if (!username) {
+    alert("el username esta vacio.");
     return false;
   }
 
-  if(!name){
-    alert("el name esta vacio.")
+  if (!name) {
+    alert("el name esta vacio.");
     return false;
   }
-  
-  if(!telefono){
-    alert("el telefono esta vacio.")
+
+  if (!telefono) {
+    alert("el telefono esta vacio.");
     return false;
   }
-  if(!rol){
-    alert("el rol esta vacio.")
+  if (!rol) {
+    alert("el rol esta vacio.");
     return false;
   }
-  if(!pass){
-    alert("el pass esta vacio.")
+  if (!pass) {
+    alert("el pass esta vacio.");
     return false;
   }
   // si pasa todas las validaciones retornamos true
@@ -156,8 +154,6 @@ export function validateGuardedPath(path) {
       return false;
     case "/crudEventos":
       return true;
-    case "/login":
-      return false;
     case "/register":
       return false;
     case "/verEventos":

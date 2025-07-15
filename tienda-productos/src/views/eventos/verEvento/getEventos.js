@@ -1,5 +1,5 @@
 export default function GetEventos(){
-    return `
+    return (`
     <article class="container my-5">
         <div class="card shadow rounded">
           <div class="card-header bg-dark  text-white">
@@ -44,6 +44,6 @@ export default function GetEventos(){
         </tr>
    </template>
     
-    `;
+    `);
 
 }

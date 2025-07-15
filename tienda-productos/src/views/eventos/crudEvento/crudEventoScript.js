@@ -1,4 +1,4 @@
-export default function verEventos() {
+export default function crudEventos() {
   /**
    * - Obtenemos nuestros elementos del dom y los almacenamos en variables
    *   inicializadas en $ para su facil identificacion.
@@ -40,12 +40,10 @@ export default function verEventos() {
         $template.querySelector(".edit").dataset.ubication = el.ubication;
         $template.querySelector(".edit").dataset.capacity = el.capacity;
         $template.querySelector(".edit").dataset.date = el.date;
-        
+
         // btn eliminar
         $template.querySelector(".delete").dataset.id = el.id;
         $template.querySelector(".delete").dataset.name = el.name;
-        
-
 
         // Clonamos nuestra plantilla
         let $templateCLone = d.importNode($template, true);
